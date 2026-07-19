@@ -45,10 +45,10 @@ alreadyPlayed: boolean;
 
         const today = new Date();
 
-        const seed = 4543;
-          //  today.getFullYear() * 10000 +
-           // (today.getMonth() + 1) * 100 +
-           // today.getDate();
+        const seed =
+          today.getFullYear() * 10000 +
+         (today.getMonth() + 1) * 100 +
+           today.getDate();
 
         this.mode = GameMode.Explore;
 
