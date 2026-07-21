@@ -30,7 +30,9 @@ export interface Statistics {
     bestGold: number;
 
     winStreak: number;
+    streakGold: number;
     bestWinStreak: number;
+    
 
 }
 
@@ -104,7 +106,7 @@ export function saveToday(result: DailyResult): void {
 
 export function loadStats(): Statistics {
 
-    return JSON.parse(
+    const stats = JSON.parse(
 
         localStorage.getItem(STATS_KEY) ??
 
@@ -121,11 +123,17 @@ export function loadStats(): Statistics {
             bestGold: 0,
 
             winStreak: 0,
+            streakGold: 0,
             bestWinStreak: 0
 
         })
 
     );
+
+    if (stats.streakGold == null)
+        stats.streakGold = 0;
+
+    return stats;
 
 }
 

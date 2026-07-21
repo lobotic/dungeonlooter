@@ -48,9 +48,9 @@ export const HEROES: Record<HeroType, Hero> = {
 
         damage: {
             [EnemyType.Goblin]: 2,
-            [EnemyType.Skeleton]: 1,
-            [EnemyType.Orc]: 2,
-            [EnemyType.Spider]: 3,
+            [EnemyType.Skeleton]: 3,
+            [EnemyType.Orc]: 1,
+            [EnemyType.Spider]: 1,
             [EnemyType.Dragon]: 5
         }
     },
@@ -64,10 +64,10 @@ export const HEROES: Record<HeroType, Hero> = {
         health: 10,
 
         damage: {
-            [EnemyType.Goblin]: 1,
-            [EnemyType.Skeleton]: 3,
-            [EnemyType.Orc]: 1,
-            [EnemyType.Spider]: 2,
+            [EnemyType.Goblin]: 3,
+            [EnemyType.Skeleton]: 1,
+            [EnemyType.Orc]: 2,
+            [EnemyType.Spider]: 1,
             [EnemyType.Dragon]: 5
         }
     }

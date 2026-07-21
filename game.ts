@@ -45,10 +45,10 @@ alreadyPlayed: boolean;
 
         const today = new Date();
 
-        const seed =
-          today.getFullYear() * 10000 +
-         (today.getMonth() + 1) * 100 +
-           today.getDate();
+        const seed = 4543;
+          //  today.getFullYear() * 10000 +
+           // (today.getMonth() + 1) * 100 +
+           // today.getDate();
 
         this.mode = GameMode.Explore;
 
@@ -180,6 +180,7 @@ saveResult(): void {
 
         stats.wins++;
         stats.winStreak++;
+        stats.streakGold += this.gold;
 
         if (stats.winStreak > stats.bestWinStreak)
             stats.bestWinStreak = stats.winStreak;
@@ -188,6 +189,7 @@ saveResult(): void {
 
         stats.losses++;
         stats.winStreak = 0;
+        stats.streakGold = 0;
 
     }
 
@@ -251,6 +253,7 @@ ${result.victory ? "🏆 Victory" : "☠️ Defeat"}
 📜 Scrolls: ${result.scrolls}
 
 🔥 Win streak: ${stats.winStreak}
+💰 Gold streak: ${stats.streakGold}
 🏆 Total wins: ${stats.wins}
 https://lobotic.github.io/dungeonlooter/`;
 

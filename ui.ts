@@ -143,20 +143,20 @@ const current = game.board.getTile(game.heroX, game.heroY);
                 <button
                     id="explore"
                     class="${game.mode === GameMode.Explore ? "active" : ""}">
-                    🗡️ Explore
+                    Explore
                 </button>
 
                 <button
                     id="mark"
                     class="${game.mode === GameMode.Mark ? "active" : ""}">
-                    ☠️ Mark
+                    Mark
                 </button>
 
                 <button
                     id="scroll"
                     class="${game.mode === GameMode.Scroll ? "active" : ""}"
                     ${game.scrolls === 0 ? "disabled" : ""}>
-                    📜 Scroll
+                    Scroll
                 </button>
 
             </div>

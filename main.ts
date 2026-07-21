@@ -30,7 +30,7 @@ function showHeroSelection(): void {
     
     <hr>
 
-    <h1>How to Play</h1>
+    <h2>How to Play</h2>
 
 
 
