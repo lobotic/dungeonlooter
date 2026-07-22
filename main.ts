@@ -37,15 +37,63 @@ function showHeroSelection(): void {
 
 <div class="rules">
 
-    <p>🏰 Reach the 🚪 exit alive.</p>
-    <p>🔮 Every move reveals clues.</p>
-    <p>👺💀🐗🕷️ Monsters damage your hero.</p>
-    <p>🪤 Traps always deal 2 damage.</p>
+    <p><strong>🏰 Goal</strong></p>
+    <p>Reach the 🚪 exit before your hero dies.</p>
+
+    <hr>
+
+    <p><strong>🔮 Clues</strong></p>
+
+    <p>🪤 The number shows how many traps are hidden in the 8 surrounding tiles.</p>
+
+    <p>⚔️ The combat value shows the total damage from all monsters in the 8 surrounding tiles.</p>
+
+    <p>🧭 The arrow always points towards the treasure.</p>
+
+    <hr>
+
+    <p><strong>👹 Monsters</strong></p>
+
+    <p>👺 Goblin</p>
+    <p>💀 Skeleton</p>
+    <p>🐗 Orc</p>
+    <p>🕷️ Spider</p>
+
+    <p>Each hero takes different damage from each monster.</p>
+
+    <p>🐉 Dragons deal heavy damage, give 5 gold and always drop 1 scroll.</p>
+
+    <hr>
+
+    <p><strong>💰 Rewards</strong></p>
+
     <p>💰 Treasure gives 15 gold.</p>
-    <p>🐉 Dragon gives gold and a scroll.</p>
-    <p>📜 Scrolls reveal any tile.</p>
-    <p>☠️ Marks flag suspicious tiles.</p>
-    <p>🗓️ One dungeon per day.</p>
+
+    <p>👹 Monsters may drop gold or scrolls.</p>
+
+    <hr>
+
+    <p><strong>📜 Scrolls</strong></p>
+
+    <p>Reveal any unrevealed tile without moving there.</p>
+
+    <hr>
+
+    <p><strong>☠️ Marks</strong></p>
+
+    <p>Use marks to flag dangerous tiles.</p>
+
+    <p>Marks disappear automatically when you enter a tile.</p>
+
+    <hr>
+
+    <p><strong>🗓️ Daily Challenge</strong></p>
+
+    <p>There is only one dungeon each day.</p>
+
+    <p>Everyone plays the same hero and the same dungeon.</p>
+
+    <p>Build your win streak and share your results!</p>
 
 </div>
 
