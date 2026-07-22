@@ -91,7 +91,7 @@ function showHeroSelection(): void {
 
     <p>There is only one dungeon each day.</p>
 
-    <p>Everyone plays the same hero and the same dungeon.</p>
+    <p>Everyone faces the same daily dungeon with the hero they choose.</p>
 
     <p>Build your win streak and share your results!</p>
 
