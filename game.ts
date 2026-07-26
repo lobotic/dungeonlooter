@@ -78,21 +78,25 @@ if (daily[this.getTodayKey()]) {
 
 const saved = loadGame();
 
-if (saved) {
-this.board.tiles = saved.board;
-   this.heroX = saved.heroX;
-this.heroY = saved.heroY;
+if (saved && saved.date === this.getTodayKey()) {
 
-this.hero.health = saved.health;
+    this.board.tiles = saved.board;
 
-this.gold = saved.gold;
-this.scrolls = saved.scrolls;
+    this.heroX = saved.heroX;
+    this.heroY = saved.heroY;
 
-this.enemiesKilled = saved.enemiesKilled;
+    this.hero.health = saved.health;
 
-this.mode = saved.mode;
+    this.gold = saved.gold;
+    this.scrolls = saved.scrolls;
+
+    this.enemiesKilled = saved.enemiesKilled;
+
+    this.mode = saved.mode;
 
 } else {
+
+    clearGame();
 
     this.generateDungeon();
 
@@ -216,6 +220,8 @@ private saveGame(): void {
 
     saveGame({
 
+       date: this.getTodayKey(),
+       
         heroX: this.heroX,
         heroY: this.heroY,
 
@@ -409,7 +415,7 @@ https://lobotic.github.io/dungeonlooter/`;
 
     this.saveResult();
 
-} else {
+} else if (!this.gameOver) {
 
     this.saveGame();
 

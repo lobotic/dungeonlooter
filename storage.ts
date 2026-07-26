@@ -2,6 +2,7 @@ import type { Tile } from "./board";
 
 export interface DailyResult {
 
+    
     played: boolean;
 
     hero: string;
@@ -38,6 +39,7 @@ export interface Statistics {
 
 export interface SavedGame {
 
+    date: string;
     heroX: number;
     heroY: number;
 
